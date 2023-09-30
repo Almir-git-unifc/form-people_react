@@ -2,7 +2,7 @@ form-people_front-in_vite-html-css
 ======================================
 Under construction: Form - people registration, Front End made in react-vite using just html and CSS 
 
-Version 1: Send readme test repository main
+Version 0.2: Send readme test repository main
 ---------------------------------------------------------------------------------------------------------
 
 
@@ -27,7 +27,7 @@ STATUS:
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Table of Contents
 - [form-people\_front-in\_vite-html-css](#form-people_front-in_vite-html-css)
-  - [Version 1: Send readme test repository main](#version-1-send-readme-test-repository-main)
+  - [Version 0.2: Send readme test repository main](#version-02-send-readme-test-repository-main)
   - [Table of Contents](#table-of-contents)
 - [Intro ](#intro-)
 - [Feature ](#feature-)
