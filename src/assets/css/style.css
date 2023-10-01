@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Poppins:wght@200;300;400;500;600&display=swap');
+
+/* vamos zerar padding, margem e por box-sizing padrão */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;  /* aqui põe o nome da fonte que copiamos */
+}
+
+/* Abaixo vamos atualizar o body */
+body {
+/* 00% para usar a largura da tela toda e 100vh usar a altura toda */
+	width: 100%;
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #0c0ce94d; /* azul */
+
+        /* Abaixo, use somente se quiser colocar imagem de fundo */
+        /* background-image: url(endereço-imagem);   coloque ime fundo se quiser 
+           background-position: center;    colocar imagagem dem no centro 
+           background-repeat: no-repeat;   para a imagem não se multiplicar 
+           background-size: cover;  para a imagem central ocupar toda a tela */
+}
+
+.container {
+    width: 80rem;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+    margin: 1 rem;
+}
+
+/* Aos 09.50 - vamos ajustar a div da esquerda, a div imagem */
+.form-image{
+    width: 40rem;  /* 50% do container, ou 50% de 80% que já definiu acima */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fde3a7d7;
+
+    margin-left: 0.5em;
+ }
+ 
+ .form-image img{
+    width: 31rem;
+ }
+ 
+ .form {
+    width: 39rem;  /*  ou 124%*/
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  /* para ficar um embaixo do outro, e não ao lado do outro */
+    background-color: #fff;
+    padding: 3rem;    
+ }
+ 
