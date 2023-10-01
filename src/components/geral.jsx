@@ -3,7 +3,7 @@ import FormComp from './formcomp'
 
 const geral = () => {
   return (
-    <div>
+    <div className="container">
       <div>
         <Image />
       </div>
