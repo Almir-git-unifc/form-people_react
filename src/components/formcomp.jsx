@@ -111,6 +111,11 @@ const formcomp = () => {
             </div>
         </div>
 
+        <div className="continue-botton">
+            <button>
+                <a href="#">Continuar</a>
+            </button>
+        </div>
 
       </form>
     </div>
