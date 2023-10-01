@@ -43,7 +43,7 @@ STATUS:
 
 This project was developed previously for 'LarissaKich', found on youtube with the title 
 """ Formulário de Cadastro RESPONSIVO (Responsive Registration Form) | HTML e CSS """
-However, in my devepoment ...................................................................
+However, during my development I changed the background color of the hover button to make the change more visible. The main change is that I created the project in VITE, creating the form, general form, image components; where the form and image components were called in the general form; and the general form was called in app.jsx.
 
 <!-- 
 Layout de site responsivo, simples, criado com código html, css e javascript; usando regra de mídia, barra de rolagem, ícone de sanduíche e menu deslizante 

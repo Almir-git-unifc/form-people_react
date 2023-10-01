@@ -5,7 +5,7 @@ const formcomp = () => {
         {/*  div form-header tem o título cadastre-se para entrar */}
         <div className="form-header">
           <div className="title">
-            <h2>Cadastre-se</h2>
+            <h1>Cadastre-se</h1>
           </div>
 
           <div className="login-button">
@@ -89,29 +89,29 @@ const formcomp = () => {
             </div>
 
             <div className="gender-group">
-                <div className="gender input">
+                <div className="gender-input">
                     <input type="radio" id="female" name="gender" />
                     <label htmlFor="female">Feminino</label>
                 </div>
 
-                <div className="gender input">
+                <div className="gender-input">
                     <input type="radio" id="male" name="gender" />
                     <label htmlFor="male">Masculino</label>
                 </div>
 
-                 <div className="gender input">
+                 <div className="gender-input">
                     <input type="radio" id="others" name="gender" />
                     <label htmlFor="others">Outros</label>
                 </div>
 
-                <div className="gender input">
+                <div className="gender-input">
                     <input type="radio" id="none" name="gender" />
                     <label htmlFor="none">Prefiro não dizer</label>
                 </div>
             </div>
         </div>
 
-        <div className="continue-botton">
+        <div className="continue-button">
             <button>
                 <a href="#">Continuar</a>
             </button>
