@@ -2,62 +2,221 @@
 
 /* vamos zerar padding, margem e por box-sizing padrão */
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;  /* aqui põe o nome da fonte que copiamos */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif; /* aqui põe o nome da fonte que copiamos */
 }
 
 /* Abaixo vamos atualizar o body */
 body {
-/* 00% para usar a largura da tela toda e 100vh usar a altura toda */
-	width: 100%;
-	height: 100vh;
+  /* 00% para usar a largura da tela toda e 100vh usar a altura toda */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0c0ce94d; /* azul */
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: #0c0ce94d; /* azul */
-
-        /* Abaixo, use somente se quiser colocar imagem de fundo */
-        /* background-image: url(endereço-imagem);   coloque ime fundo se quiser 
+  /* Abaixo, use somente se quiser colocar imagem de fundo */
+  /* background-image: url(endereço-imagem);   coloque ime fundo se quiser 
            background-position: center;    colocar imagagem dem no centro 
            background-repeat: no-repeat;   para a imagem não se multiplicar 
            background-size: cover;  para a imagem central ocupar toda a tela */
 }
 
 .container {
-    width: 80rem;
-    height: 80vh;
-    display: flex;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
-    margin: 1 rem;
+  width: 80rem;
+  height: 80vh;
+  display: flex;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+  margin: 1 rem;
 }
 
 /* Aos 09.50 - vamos ajustar a div da esquerda, a div imagem */
-.form-image{
-    width: 40rem;  /* 50% do container, ou 50% de 80% que já definiu acima */
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fde3a7d7;
+.form-image {
+  width: 40rem; /* 50% do container, ou 50% de 80% que já definiu acima */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fde3a7d7;
+  margin-left: 0.5em;
+}
 
-    margin-left: 0.5em;
+.form-image img {
+  width: 31rem;
+}
+
+.form {
+  width: 39rem; /*  ou 124%*/
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* para ficar um embaixo do outro, e não ao lado do outro */
+  background-color: #fff;
+  padding: 3rem;
+}
+
+/* Vamos colocar o título Cadastre-se ao lado do botão */
+.form-header {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ajustando botão em relação ao título */
+.login-button {
+  display: flex;
+  align-items: center;
+}
+
+.login-button button {
+  border: none;
+  background-color: #6c63ff; /* azul violeta */
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button button:hover {
+  background-color: #8000ff; /* azul violeta */
+}
+
+/* texto do botão */
+.login-button button a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* sublinhar o título: Cadastre-se */
+.form-header h1::after {
+  content: ''; /* content é vazio mesmo */
+  display: block;
+  width: 5rem;
+  height: 0.3rem;
+  background: #6c63ff;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
+}
+
+/* agora vamos distanciar os input-groups */
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+}
+
+.input-box input {
+  margin: 0.6rem 0;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px  #0000001c;
+}
+
+/* Agora vamos separar radiobutton gennder uns dos outros ************* */
+.input-box input:hover {
+  background-color: #eeeeee75;
+}
+
+input-box input:focus-visible {
+  outline: 1px solid #6c63ff; /* e outline é a borda; e azul cor da borda */
+}
+
+/* mudando os textos dos labels dos títulos */
+.input-box label, .gender-title h6 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+/* mudar o texto do placeholder do primeiro nome */
+.input-box input::placeholder {
+  color: #000000be;
+}
+
+
+/* Ajustando as caixas input-box */
+/* cor de fundo da caixa input */
+.input-box input:hover {
+  background-color: #eeeeee75;
+}
+
+input-box input:focus-visible {
+  outline: 1px solid #6c63ff; /* azul cor da borda */
+}
+
+/* mudando os textos dos títulos Primeiro, Sobrenome, Email, Celular, Senha, Genero*/
+.input-box label,
+.gender-title h6 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+/* mudar o texto do placeholder: Digite o primeiro nome, Digite seu sobrenome, etc */
+.input-box input::placeholder {
+  color: #000000be;
+}
+
+
+/* Agora vamos separar radiobutton gennder uns dos outros */
+.gender-group {
+  display: flex;           /* FLEX para ficar um ao lado do outro */
+  justify-content: space-between;
+  margin-top: 0.62rem;
+  padding: 0 0.5rem;
+}
+
+.gender-input {
+  display: flex;  /* FLEX para ficar um ao lado do outro */
+  align-items: center;
+}
+
+/* abaixo vamos separar a bolinha do texto, ou o item do texto */
+.gender-input input {
+  margin-right: 0.35rem;
+}
+
+/* mexendo no texto propriamente dito */
+.gender-input label {
+  font-size: 0.81 rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+
+/* Adaptando o botão continue, aos 17:20 min. */
+.continue-button button {
+   width: 100%;
+   margin-top: 2.5rem;  /* isto para dar espaço entre botão e gender-group */
+   border: none;
+   background-color: #6c63ff; /* azul */
+   padding: 0.62rem;
+   border-radius: 5px;
+   cursor: pointer;
+ }
+
+ /* Hover do botão continue */
+ .continue-button button:hover {
+   background-color: #8000ff;
  }
  
- .form-image img{
-    width: 31rem;
+ .continue-button button a {
+   text-decoration: none;
+   font-size: 0.93rem;
+   font-weight: 500;
+   color: #fff;
  }
- 
- .form {
-    width: 39rem;  /*  ou 124%*/
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;  /* para ficar um embaixo do outro, e não ao lado do outro */
-    background-color: #fff;
-    padding: 3rem;    
- }
- 
+
