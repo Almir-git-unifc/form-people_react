@@ -4,15 +4,15 @@ const formcomp = () => {
       <form action="#">
         {/*  div form-header tem o título cadastre-se para entrar */}
         <div className="form-header">
-          <div className="title">
-            <h1>Cadastre-se</h1>
-          </div>
+            <div className="title">
+              <h1>Cadastre-se</h1>
+            </div>
 
-          <div className="login-button">
-            <button>
-              <a href="#">Entrar</a>
-            </button>
-          </div>
+            <div className="login-button">
+              <button>
+                <a href="#">Entrar</a>
+              </button>
+            </div>
         </div>
 
         <div className="input-group">

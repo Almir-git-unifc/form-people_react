@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Poppins:wght@200;300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Poppins:wght@200;300;400;500;600&display=swap");
 
 /* vamos zerar padding, margem e por box-sizing padrão */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif; /* aqui põe o nome da fonte que copiamos */
+  font-family: "Inter", sans-serif; /* aqui põe o nome da fonte que copiamos */
 }
 
 /* Abaixo vamos atualizar o body */
@@ -93,7 +93,7 @@ body {
 
 /* sublinhar o título: Cadastre-se */
 .form-header h1::after {
-  content: ''; /* content é vazio mesmo */
+  content: ""; /* content é vazio mesmo */
   display: block;
   width: 5rem;
   height: 0.3rem;
@@ -122,7 +122,7 @@ body {
   padding: 0.8rem 1.2rem;
   border: none;
   border-radius: 10px;
-  box-shadow: 1px 1px 6px  #0000001c;
+  box-shadow: 1px 1px 6px #0000001c;
 }
 
 /* Agora vamos separar radiobutton gennder uns dos outros ************* */
@@ -135,7 +135,8 @@ input-box input:focus-visible {
 }
 
 /* mudando os textos dos labels dos títulos */
-.input-box label, .gender-title h6 {
+.input-box label,
+.gender-title h6 {
   font-size: 0.75rem;
   font-weight: 600;
   color: #000000c0;
@@ -145,7 +146,6 @@ input-box input:focus-visible {
 .input-box input::placeholder {
   color: #000000be;
 }
-
 
 /* Ajustando as caixas input-box */
 /* cor de fundo da caixa input */
@@ -170,17 +170,16 @@ input-box input:focus-visible {
   color: #000000be;
 }
 
-
 /* Agora vamos separar radiobutton gennder uns dos outros */
 .gender-group {
-  display: flex;           /* FLEX para ficar um ao lado do outro */
+  display: flex; /* FLEX para ficar um ao lado do outro */
   justify-content: space-between;
   margin-top: 0.62rem;
   padding: 0 0.5rem;
 }
 
 .gender-input {
-  display: flex;  /* FLEX para ficar um ao lado do outro */
+  display: flex; /* FLEX para ficar um ao lado do outro */
   align-items: center;
 }
 
@@ -196,27 +195,71 @@ input-box input:focus-visible {
   color: #000000c0;
 }
 
-
 /* Adaptando o botão continue, aos 17:20 min. */
 .continue-button button {
-   width: 100%;
-   margin-top: 2.5rem;  /* isto para dar espaço entre botão e gender-group */
-   border: none;
-   background-color: #6c63ff; /* azul */
-   padding: 0.62rem;
-   border-radius: 5px;
-   cursor: pointer;
- }
+  width: 100%;
+  margin-top: 2.5rem; /* isto para dar espaço entre botão e gender-group */
+  border: none;
+  background-color: #6c63ff; /* azul */
+  padding: 0.62rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
- /* Hover do botão continue */
- .continue-button button:hover {
-   background-color: #8000ff;
- }
- 
- .continue-button button a {
-   text-decoration: none;
-   font-size: 0.93rem;
-   font-weight: 500;
-   color: #fff;
- }
+/* Hover do botão continue */
+.continue-button button:hover {
+  background-color: #8000ff;
+}
 
+.continue-button button a {
+  text-decoration: none;
+  font-size: 0.93rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* Agora a responsividade */
+@media screen and (max-width: 1330px) {
+  .form-image {
+    display: none; /* a imagem não vai aparecer mais */
+  }
+  .container {
+    width: 50%;
+    align-items: center; /* para o box ficar no meiod a altura */
+    margin-left: 25%; /* para o box ficar no meio da largura (metade dos 50%) */
+    box-shadow: none;
+  }
+  .form {
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212); /* Adiciona aqui a sobra tirada da cx grande */
+  }
+}
+
+/* aos 1122px um problema, campos saem para fora do formulário,e para resolver... */
+@media screen and (max-width: 1122px) {
+  .container {
+    width: 90%; /* o container era 50% com muita borda ao lado. Agora o container será maior, e com menos borda */
+    height: auto; /* altura automática */
+    margin-left: 5%;
+  }
+
+  .input-group {
+    flex-direction: column; /* assim fica um embaixo do outro */
+    overflow-y: scroll; /* esta será uma scroll */
+    flex-wrap: nowrap; /* para não quebrar */
+    max-height: 10rem; /* definindo altura padrão */
+    padding-right: 5rem; /* para a scroll não ficar muito colada */
+  }
+
+  .gender-inputs {
+    margin-top: 2rem; /* para separar o Gênero do item sobenome*/
+  }
+
+  .gender-group {
+    flex-direction: column; /* e vamos deixar um item gender embaixo do outro, pois estava um ao lado do outro. */
+  }
+
+  .gender-input {
+   margin-top: 0.5rem; /* para separar um gender do outro gender*/
+ }
+}
