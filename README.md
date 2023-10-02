@@ -11,7 +11,7 @@ Form - people registration, Front End made in react-vite using html and CSS
 </h3>
 
 
-                  ===============================================
+                     ==================================================
                       
 
 --------------------------------------------------------------------------------------
@@ -61,8 +61,8 @@ In youtube's video this project was developed with Html, CSS.
 
 However, during my development the main change is that I created the project in VITE, creating the form, general form, image components; where the form and image components were called in the general form; and the general form was called in app.jsx; and beyond that, I also changed the background color of the button on hover to make the change more visible.
 
-### Built With 
-![React](https://img.shields.io/badge/react-%23FA7343.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+# Built With 
+![React](https://img.shields.io/badge/react-%23FA7343.svg?style=for-the-badge&logo=react&logoColor=%23000080)
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
@@ -93,8 +93,6 @@ From your command line:
 ### $ `(framework)       React`
 ### $ `(variant)         JavaScript`
 
-### $ `Copy content project, was download of this Github repository, inside folder vite-project created before`
-
 
 &nbsp;
 ## Run locally the app
@@ -104,9 +102,19 @@ From your command line:
 #### $ `use the Local link provided by VITE to access the server`
 
 
+#### $ `Copy content project, was download of this Github repository, inside folder vite-project created before`
+
+
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 ```
+
+
+<h5>
+ Enjoyed and if this is useful to you, give me a star 🌟
+</h5>
+
+
 
 &nbsp;
 # Author <a name = "Author"></a>
