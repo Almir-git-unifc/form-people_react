@@ -1,16 +1,15 @@
 form-people_front-in_vite-html-css
 ======================================
-Under construction: Form - people registration, Front End made in react-vite using just html and CSS 
+Form - people registration, Front End made in react-vite using html and CSS 
 
-Version 00.03.000: form personal data and gender
 ---------------------------------------------------------------------------------------------------------
 
 
-STATUS: 
+ 
 <h3 align="center"> 
-	🚧  React VITE 🚀 App under construction ...  🚧
+	 STATUS: 🔔  React VITE 🚀  App:   Finished ...  🎯 
 </h3>
-<h5>We are still building</h5>
+
 
                       ==========================================
                       
@@ -18,7 +17,9 @@ STATUS:
 --------------------------------------------------------------------------------------
 
 
-![Login Screen](https://github.com/Almir-git-unifc/form-people_front-in_vite-html-css/blob/main/xxxxxxxxxxxxxxxx.png)
+![Large Screen](https://github.com/Almir-git-unifc/form-people_front-in_vite-html-css/blob/main/screen1.png)
+
+![Medium+Samall Screen](https://github.com/Almir-git-unifc/form-people_front-in_vite-html-css/blob/main/screen2.png)
 
 
 --------------------------------------------------------------------------------------
@@ -27,7 +28,6 @@ STATUS:
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Table of Contents
 - [form-people\_front-in\_vite-html-css](#form-people_front-in_vite-html-css)
-  - [Version 00.03.000: form personal data and gender](#version-0003000-form-personal-data-and-gender)
   - [Table of Contents](#table-of-contents)
 - [Intro ](#intro-)
 - [Feature ](#feature-)
@@ -41,9 +41,9 @@ STATUS:
 
 # Intro <a name = "Intro"></a>
 
-This project was developed previously for 'LarissaKich', found on youtube with the title 
-""" Formulário de Cadastro RESPONSIVO (Responsive Registration Form) | HTML e CSS """
-However, during my development I changed the background color of the hover button to make the change more visible. The main change is that I created the project in VITE, creating the form, general form, image components; where the form and image components were called in the general form; and the general form was called in app.jsx.
+This project was previously developed for 'LarissaKich', found on YouTube with the title """ RESPONSIVE Registration Form | HTML and CSS """; and by Matheus Manuel, with the title """RESPONSIVE REGISTRATION FORM | Registration page | HTML AND CSS""".
+
+ However, during my development the main change is that I created the project in react-vite, and instead of the index.html file I used the app.js file; and instead of the index.html file I used the app.js file; and I made a small change to the background color of the buttons to make the change more visible..
 
 <!-- 
 Layout de site responsivo, simples, criado com código html, css e javascript; usando regra de mídia, barra de rolagem, ícone de sanduíche e menu deslizante 
@@ -53,17 +53,19 @@ Layout de site responsivo, simples, criado com código html, css e javascript; u
 
 # Feature <a name = "Feature"></a>
 - Form peoples
+- Responsive layout
 
 
 &nbsp;
 # Technologies <a name = "Technologies"></a>
 
-In youtube's video this project was developed with Html, CSS
+In youtube's video this project was developed with Html, CSS.
 
-However, in my devepoment used:
-Msg-linter and comitzen for semantic version and Convencional Commits, react-vite 
+However, during my development the main change is that I created the project in VITE, creating the form, general form, image components; where the form and image components were called in the general form; and the general form was called in app.jsx; and beyond that, I also changed the background color of the button on hover to make the change more visible.
 
 ### Built With 
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
@@ -79,7 +81,7 @@ From your command line:
 ```
 &nbsp;
 ## Clone this repository or download zip folder
-### $ `https://github.com/Almir-git-unifc/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.git`
+### $ `https://github.com/Almir-git-unifc/form-people_front-in_vite-html-css.git`
 
 
 &nbsp;
