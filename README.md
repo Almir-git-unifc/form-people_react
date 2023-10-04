@@ -41,7 +41,7 @@ Form - people registration, Front End made in react-vite using html and CSS
 
 This project was previously developed for 'LarissaKich', found on YouTube with the title """ RESPONSIVE Registration Form | HTML and CSS """; and by Matheus Manuel, with the title """RESPONSIVE REGISTRATION FORM | Registration page | HTML AND CSS""".
 
- However, during my development the main change is that I created the project in react-vite, and instead of the index.html file I used the app.js file; and instead of the index.html file I used the app.js file; and I made a small change to the background color of the buttons to make the change more visible..
+ However, during my development the main change is that I created the project in react-vite, and instead of the index.html file I used the app.js file; and I made a small change to the background color of the buttons to make the change more visible..
 
 <!-- 
 Layout de site responsivo, simples, criado com código html, css e javascript; usando regra de mídia, barra de rolagem, ícone de sanduíche e menu deslizante 
